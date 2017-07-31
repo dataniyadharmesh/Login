@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.saurabhinfosys.games.login_register.Register">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        >
+        <EditText
+
+            android:id="@+id/txtuser_name"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/txtuser_email"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email ID"
+            android:inputType="text" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/txt_user_password"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/txt_user_repassword"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Re-Enter Password"
+            android:inputType="textPassword" />
+
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Sign up"
+            android:textSize="20dp"
+            android:onClick="userregister"
+
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18dp"
+        android:text="Already have an Account, Login Now"
+        android:layout_alignParentBottom="true"
+        android:onClick="gotologin"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
